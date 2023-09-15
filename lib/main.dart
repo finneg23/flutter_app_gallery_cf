@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_gallery/network/endpoints.dart';
 import 'package:flutter_app_gallery/widgets/imageCard.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'My Gallery App'),
     );
   }
 }
@@ -31,13 +32,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  EndPoints endPoints = EndPoints();
+  String authorName = "Author of Image";
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,10 +43,10 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(
+      body:  Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: ImageCard(),
+        child: ImageCard(authorName:authorName,imageUrl:endPoints.getImageSize(400,400)),
       ),
     );
   }
