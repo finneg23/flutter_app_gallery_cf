@@ -19,12 +19,14 @@ We are using the following api to fetch images from the internet: https://picsum
 
 After fetching the image we populate a Card with the image author's name and the image under the title. Look below for card UI references.
 
-![image](https://github.com/Dgolme1/flutter_app_gallery/assets/82067568/c753b943-07ac-44bf-8db2-8d0c345ecece)
+![image](https://github.com/Dgolme1/flutter_app_gallery/assets/82067568/4f10eff1-adca-44e9-b121-34ddeb37aa43)
+
 
 We want to populate the screen with a horizontally scrolling list of these image cards. Look below for UI references.
 We want to be able to scroll to new images seamlessly and scroll back, up to 20 previous images. 
 
-![image](https://github.com/Dgolme1/flutter_app_gallery/assets/82067568/31014ae2-55c5-416b-aa88-5d6e7235a4ac)
+![image](https://github.com/Dgolme1/flutter_app_gallery/assets/82067568/13388c6c-40cc-4880-a79d-0e3556ef29dc)
+
 
 ### When Finished
 When you have completed the assessment, email molly@ascentitech.com with the link to your new repository and answer the following questions as honestly as you can.
