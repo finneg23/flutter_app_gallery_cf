@@ -1,6 +1,6 @@
 
 class WebImage{
-  int id;
+  String id;
   String author;
   int width;
   int height;

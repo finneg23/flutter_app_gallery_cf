@@ -5,6 +5,7 @@ class EndPoints{
 
   String baseUrl = "https://picsum.photos/";
 
+  //Returns an image with specified height and width
   String getImageSize(int width,int height){
     return "$baseUrl$width/$height";
   }
@@ -18,6 +19,7 @@ class EndPoints{
   String getImageFromId(int imageId){
     return "${baseUrl}id/$imageId";
   }
+
   //Returns specific image info given the id
   String getImageInfoFromId(int imageId){
     return "${baseUrl}id/$imageId/info";

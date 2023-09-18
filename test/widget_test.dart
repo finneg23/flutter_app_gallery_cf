@@ -12,6 +12,11 @@ import 'package:flutter_app_gallery/widgets/imageCard.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:network_image_mock/network_image_mock.dart';
 
+
+/**
+ * Here we are testing the successful inflation of our UI widgets
+ * Remember to test any additions you will add to the UI
+ */
 void main() {
   testWidgets('Card Widget Test', (WidgetTester tester) async {
     await mockNetworkImagesFor(() async{
