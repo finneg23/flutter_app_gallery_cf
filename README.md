@@ -1,7 +1,7 @@
 # Gallery App
 Welcome Ascent Applicant!
 
-Today you will be completing a Flutter Assesmnent, it should take 2-3 hours to complete entirely.
+Today you will be completing a Flutter Assessment , it should take 2-3 hours to complete entirely.
 
 ## Getting Started
 You are tasked with completing our image viewing app. Some parts of the app have been pre-written for you. It is up to you if you choose to utilize this template or frewshly re-write the application.
