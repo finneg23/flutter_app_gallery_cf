@@ -8,7 +8,7 @@ You are tasked with completing our image viewing app. Some parts of the app have
 Be cognizant of your time and abilities when considering this choice.
 
 ## Skills Assessed
-- Full coverage testing
+- Full coverage Api and Widget testing
 - Network calling
 - Flutter UI manipulation
 - Data object management
