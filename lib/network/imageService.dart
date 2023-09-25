@@ -14,6 +14,22 @@ class ImageWebService{
   
   //HINT: Consider creating an api call to collect a list of web image info (endpoints.getListOfImages)
 
+    Future<WebImageList> fetchWebImageList() async {
+    try {
+      final response = 
+        await _client.get(Uri.parse(endPoints.getListOfImages()));
+        if (response.statusCode == 200) {
+          return WebImageList.fromJson(jsonDecode(response.body));
+        }  else {
+        print(response.body);
+        throw Exception(response.statusCode);
+      }
+    } catch (e) {
+      return Future.error(e);
+    }
+          
+    }
+
   //Use this function to fetch a web image's full info json
   Future<WebImage> fetchWebImageInfo(int id) async{
     try{
